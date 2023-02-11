@@ -33,7 +33,7 @@ func TestIndexRoute(t *testing.T) {
 		},
 		{
 			description:   "non existing route",
-			route:         "/i-dont-exist",
+			route:         "/not-exist",
 			expectedError: false,
 			expectedCode:  404,
 			expectedBody:  "Cannot GET /i-dont-exist",
