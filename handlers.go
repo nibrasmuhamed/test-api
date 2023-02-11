@@ -65,3 +65,9 @@ func Statitics(c *fiber.Ctx) error {
 		"count": database.count,
 	})
 }
+
+func ResetTransactions(c *fiber.Ctx) error {
+	resetDB()
+	resetQueue()
+	return c.SendStatus(204)
+}

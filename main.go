@@ -63,6 +63,7 @@ func Setup() *fiber.App {
 	// code 200
 	app.Post("/transactions", Transactions)
 	app.Get("/statitics", Statitics)
+	app.Delete("/transactions", ResetTransactions)
 
 	// Return the configured app
 	return app

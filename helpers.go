@@ -51,3 +51,7 @@ func resetDB() {
 	database.average = 0
 	database.sum = 0
 }
+
+func resetQueue() {
+	queue = Queue{nil, nil}
+}
